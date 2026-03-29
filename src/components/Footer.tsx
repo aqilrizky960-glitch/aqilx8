@@ -19,10 +19,10 @@ export default function Footer() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="flex items-center gap-2 text-muted-foreground"
+            className="flex items-center gap-2 text-red-500"
           >
             <span>© {currentYear} Made with</span>
-            <Heart className="h-4 w-4 text-destructive fill-destructive" />
+            <Heart className="h-4 w-4 text-red-500 fill-red-500" />
             <span>by Developer</span>
           </motion.div>
 
@@ -36,7 +36,7 @@ export default function Footer() {
               <a
                 key={social.label}
                 href={social.href}
-                className="p-2 rounded-full hover:bg-muted transition-colors text-muted-foreground hover:text-foreground"
+                className="p-2 rounded-full hover:bg-red-500 transition-colors text-red-500 hover:text-white"
                 aria-label={social.label}
               >
                 <social.icon className="h-5 w-5" />

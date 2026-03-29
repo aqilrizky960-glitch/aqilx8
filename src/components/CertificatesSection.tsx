@@ -9,7 +9,7 @@ const certificates = [
     date: '2024',
     credentialId: 'DM-001',
     image: '📈',
-    color: 'from-blue-500/20 to-cyan-500/20',
+    color: 'from-red-200/20 to-red-400/20',
     link: '#',
   },
   {
@@ -18,7 +18,7 @@ const certificates = [
     date: '2024',
     credentialId: 'VE-002',
     image: '🎬',
-    color: 'from-red-500/20 to-orange-500/20',
+    color: 'from-red-300/20 to-red-500/20',
     link: '#',
   },
   {
@@ -27,7 +27,7 @@ const certificates = [
     date: '2023',
     credentialId: 'PS-003',
     image: '🎨',
-    color: 'from-purple-500/20 to-pink-500/20',
+    color: 'from-red-200/20 to-red-400/20',
     link: '#',
   },
   {
@@ -36,7 +36,7 @@ const certificates = [
     date: '2023',
     credentialId: 'GM-004',
     image: '🎮',
-    color: 'from-green-500/20 to-teal-500/20',
+    color: 'from-red-300/20 to-red-500/20',
     link: '#',
   },
   {
@@ -45,7 +45,7 @@ const certificates = [
     date: '2024',
     credentialId: 'CC-005',
     image: '📱',
-    color: 'from-indigo-500/20 to-purple-500/20',
+    color: 'from-red-200/20 to-red-400/20',
     link: '#',
   },
   {
@@ -54,7 +54,7 @@ const certificates = [
     date: '2023',
     credentialId: 'EX-006',
     image: '📊',
-    color: 'from-yellow-500/20 to-orange-500/20',
+    color: 'from-red-300/20 to-red-500/20',
     link: '#',
   },
 ];
@@ -71,7 +71,7 @@ export default function CertificatesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-blue-600 font-medium mb-2 block">
+          <span className="text-red-500 font-medium mb-2 block">
             Kredensial
           </span>
 
@@ -79,12 +79,11 @@ export default function CertificatesSection() {
             Sertifikat & Lisensi
           </h2>
 
-          <div className="w-20 h-1 bg-blue-500 mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-red-500 mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {certificates.map((cert, index) => (
-
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
@@ -102,7 +101,7 @@ export default function CertificatesSection() {
                 <div className="space-y-3">
 
                   <div className="flex items-start gap-2">
-                    <Award className="h-5 w-5 text-blue-500 mt-1" />
+                    <Award className="h-5 w-5 text-red-500 mt-1" />
                     <h3 className="text-lg font-bold">
                       {cert.title}
                     </h3>
@@ -113,7 +112,7 @@ export default function CertificatesSection() {
                   </p>
 
                   <div className="flex items-center gap-2 text-sm text-gray-500">
-                    <Calendar className="h-4 w-4" />
+                    <Calendar className="h-4 w-4 text-red-500" />
                     <span>{cert.date}</span>
                   </div>
 
@@ -123,7 +122,7 @@ export default function CertificatesSection() {
 
                   <Button size="sm" variant="outline" asChild>
                     <a href={cert.link} target="_blank">
-                      <ExternalLink className="h-4 w-4 mr-1" />
+                      <ExternalLink className="h-4 w-4 mr-1 text-red-500" />
                       Lihat
                     </a>
                   </Button>
@@ -133,7 +132,6 @@ export default function CertificatesSection() {
               </div>
 
             </motion.div>
-
           ))}
         </div>
 

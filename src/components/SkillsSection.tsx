@@ -24,7 +24,7 @@ const skills = {
   ],
 };
 
-function SkillBar({ name, level, delay }) {
+function SkillBar({ name, level, delay }: { name: string; level: number; delay: number }) {
   return (
     <motion.div
       initial={{ opacity: 0, x: -20 }}
@@ -33,16 +33,16 @@ function SkillBar({ name, level, delay }) {
       className="space-y-2"
     >
       <div className="flex justify-between">
-        <span>{name}</span>
-        <span>{level}%</span>
+        <span className="font-medium">{name}</span>
+        <span className="font-mono text-sm">{level}%</span>
       </div>
 
-      <div className="h-2 bg-gray-300 rounded-full overflow-hidden">
+      <div className="h-3 bg-gray-300 rounded-full overflow-hidden">
         <motion.div
           initial={{ width: 0 }}
           whileInView={{ width: `${level}%` }}
           transition={{ duration: 1, delay: delay + 0.2 }}
-          className="h-full bg-blue-500"
+          className="h-full bg-red-500 rounded-full"
         />
       </div>
     </motion.div>
@@ -51,16 +51,23 @@ function SkillBar({ name, level, delay }) {
 
 export default function SkillsSection() {
   return (
-    <section className="py-20">
+    <section id="skills" className="py-20 bg-muted/10">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-10">
-          Skills
-        </h2>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-12"
+        >
+          <span className="text-red-600 font-medium mb-2 block">My Expertise</span>
+          <h2 className="text-3xl md:text-4xl font-bold">Skills & Kemampuan</h2>
+          <div className="w-20 h-1 bg-red-500 mx-auto rounded-full mt-2" />
+        </motion.div>
 
         <div className="grid md:grid-cols-3 gap-8">
           
           <div>
-            <h3 className="font-bold mb-4">Business</h3>
+            <h3 className="font-bold text-xl mb-4 text-red-500">Business</h3>
             <div className="space-y-4">
               {skills.business.map((skill, index) => (
                 <SkillBar key={index} {...skill} delay={index * 0.1} />
@@ -69,7 +76,7 @@ export default function SkillsSection() {
           </div>
 
           <div>
-            <h3 className="font-bold mb-4">Gaming</h3>
+            <h3 className="font-bold text-xl mb-4 text-red-500">Gaming</h3>
             <div className="space-y-4">
               {skills.gaming.map((skill, index) => (
                 <SkillBar key={index} {...skill} delay={index * 0.1} />
@@ -78,7 +85,7 @@ export default function SkillsSection() {
           </div>
 
           <div>
-            <h3 className="font-bold mb-4">Creative</h3>
+            <h3 className="font-bold text-xl mb-4 text-red-500">Creative</h3>
             <div className="space-y-4">
               {skills.creative.map((skill, index) => (
                 <SkillBar key={index} {...skill} delay={index * 0.1} />

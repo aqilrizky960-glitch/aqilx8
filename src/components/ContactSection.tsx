@@ -10,7 +10,7 @@ const contactInfo = [
     icon: Mail,
     label: 'Email',
     value: 'aqilrizky960@gmail.com',
-    href: 'aqilrizky960@gmail.com',
+    href: 'mailto:aqilrizky960@gmail.com',
   },
   {
     icon: Phone,
@@ -68,11 +68,11 @@ export default function ContactSection() {
           whileInView={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <span className="text-blue-600 font-medium mb-2 block">Kontak</span>
+          <span className="text-red-500 font-medium mb-2 block">Kontak</span>
           <h2 className="text-3xl md:text-5xl font-bold mb-4">
             Hubungi Saya
           </h2>
-          <div className="w-20 h-1 bg-blue-500 mx-auto rounded-full" />
+          <div className="w-20 h-1 bg-red-500 mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
@@ -90,7 +90,7 @@ export default function ContactSection() {
 
             {contactInfo.map((info, index) => (
               <div key={index} className="flex items-center gap-4">
-                <info.icon className="text-blue-500" />
+                <info.icon className="text-red-500" />
                 <div>
                   <p className="text-sm text-gray-500">{info.label}</p>
                   <p className="font-medium">{info.value}</p>
@@ -145,12 +145,12 @@ export default function ContactSection() {
             <Button type="submit" className="w-full">
               {isSubmitting ? (
                 <>
-                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin text-red-500" />
                   Mengirim...
                 </>
               ) : (
                 <>
-                  <Send className="mr-2 h-4 w-4" />
+                  <Send className="mr-2 h-4 w-4 text-red-500" />
                   Kirim Pesan
                 </>
               )}

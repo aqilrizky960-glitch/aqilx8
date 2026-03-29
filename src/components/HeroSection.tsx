@@ -42,8 +42,8 @@ export default function HeroSection() {
           >
             <img
               src="/gambar1.jpg" // ganti dengan foto kamu
-              alt="Naufal"
-              className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-primary shadow-glow"
+              alt="Aqil Risky"
+              className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-red-500 shadow-glow"
             />
           </motion.div>
 
@@ -55,17 +55,17 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
             >
-              <span className="text-gradient">Aqil Risky</span>
+              <span className="text-red-500">Aqil Risky</span>
             </motion.h1>
 
             <motion.p
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-lg md:text-xl text-muted-foreground mb-8"
+              className="text-lg md:text-xl text-red-500 mb-8"
             >
               Saya membangun aplikasi web yang indah dan fungsional, serta
-              membagikan pengetahuan melalui konten yang inspiratif.kerja keras tidak menghianati hasil,aku akan mengejar mimpiku sampai aku mendapatkannya 
+              membagikan pengetahuan melalui konten yang inspiratif. Kerja keras tidak menghianati hasil, aku akan mengejar mimpiku sampai aku mendapatkannya.
             </motion.p>
 
             <motion.div
@@ -76,7 +76,7 @@ export default function HeroSection() {
             >
               <Button
                 size="lg"
-                className="rounded-full px-8 shadow-glow"
+                className="rounded-full px-8 shadow-glow bg-red-500 hover:bg-red-600"
                 onClick={() => {
                   const element = document.querySelector("#projects");
                   if (element) element.scrollIntoView({ behavior: "smooth" });
@@ -88,7 +88,7 @@ export default function HeroSection() {
               <Button
                 variant="outline"
                 size="lg"
-                className="rounded-full px-8"
+                className="rounded-full px-8 border-red-500 text-red-500 hover:bg-red-500 hover:text-white"
                 onClick={() => {
                   const element = document.querySelector("#contact");
                   if (element) element.scrollIntoView({ behavior: "smooth" });
@@ -105,12 +105,12 @@ export default function HeroSection() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-3 rounded-full glass hover:shadow-glow transition-all duration-300"
+                  className="p-3 rounded-full glass hover:shadow-glow transition-all duration-300 text-red-500 hover:bg-red-500 hover:text-white"
                   whileHover={{ scale: 1.1, y: -2 }}
                   whileTap={{ scale: 0.95 }}
                   aria-label={social.label}
                 >
-                  <social.icon className="h-5 w-5 text-foreground" />
+                  <social.icon className="h-5 w-5" />
                 </motion.a>
               ))}
             </div>
@@ -120,10 +120,10 @@ export default function HeroSection() {
 
       <motion.button
         onClick={scrollToAbout}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 p-3 rounded-full glass animate-float cursor-pointer"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 p-3 rounded-full glass animate-float cursor-pointer text-red-500"
         whileHover={{ scale: 1.1 }}
       >
-        <ArrowDown className="h-5 w-5 text-primary" />
+        <ArrowDown className="h-5 w-5" />
       </motion.button>
     </section>
   );
