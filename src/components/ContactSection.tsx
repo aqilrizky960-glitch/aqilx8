@@ -9,18 +9,18 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'emailkamu@gmail.com',
-    href: 'mailto:emailkamu@gmail.com',
+    value: 'aqilrizky960@',
+    href: 'aqilrizky960@gmail.com',
   },
   {
     icon: Phone,
     label: 'Telepon',
-    value: '+62 812 xxxx xxxx',
-    href: 'tel:+62812xxxxxxx',
+    value: '+62 81361547493',
+    href: 'tel:+628136154743',
   },
   {
     icon: MapPin,
-    label: 'Lokasi',
+    label: 'Banda Aceh',
     value: 'Indonesia',
     href: '#',
   },
