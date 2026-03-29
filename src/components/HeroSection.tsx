@@ -55,7 +55,7 @@ export default function HeroSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-display text-4xl md:text-6xl lg:text-7xl font-bold mb-6"
             >
-              <span className="text-gradient">Naufal Portfolio</span>
+              <span className="text-gradient">Aqil Risky</span>
             </motion.h1>
 
             <motion.p
@@ -65,7 +65,7 @@ export default function HeroSection() {
               className="text-lg md:text-xl text-muted-foreground mb-8"
             >
               Saya membangun aplikasi web yang indah dan fungsional, serta
-              membagikan pengetahuan melalui konten yang inspiratif.
+              membagikan pengetahuan melalui konten yang inspiratif.kerja keras tidak menghianati hasil,aku akan mengejar mimpiku sampai aku mendapatkannya 
             </motion.p>
 
             <motion.div
