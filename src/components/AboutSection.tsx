@@ -21,7 +21,7 @@ export default function AboutSection() {
         >
           <span className="text-primary font-medium mb-2 block">Tentang Saya</span>
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
-            Mengenal Lebih Dekat
+           profil pribadi
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>
@@ -54,17 +54,14 @@ export default function AboutSection() {
             className="space-y-6"
           >
             <h3 className="font-display text-2xl md:text-3xl font-bold">
-              Passionate Developer &amp; Creator
+              Mengenal Lebih Dekat
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Saya adalah seorang Fullstack Web Developer dengan passion yang kuat dalam menciptakan 
-              solusi digital yang inovatif. Dengan pengalaman lebih dari 5 tahun, saya telah 
-              membantu berbagai klien dan perusahaan dalam mewujudkan ide-ide mereka menjadi 
-              aplikasi web yang powerful dan user-friendly.
+              Nama Saya Aqil Risky Ramadhan,Saya Lahir Pada Tanggal 2 September 2009,Saya Kelas x-8 Siswa Dari Man 1 Banda Aceh Saya tinggal Di Banda Aceh lamlagang 
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Selain coding, saya juga aktif sebagai Content Creator, berbagi pengetahuan 
-              tentang pemrograman dan teknologi melalui berbagai platform. Saya percaya bahwa 
+              saat ini saya sedang belajar koding,dan saya baru pertama kali cara membuat portofolio
+              saya ingin belajar program dan teknologi melalui berbagai platform. Saya percaya bahwa belajar 
               berbagi ilmu adalah cara terbaik untuk terus belajar dan berkembang.
             </p>
             <div className="grid grid-cols-2 gap-4 pt-4">
